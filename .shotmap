@@ -1,0 +1,7 @@
+#this file contains the variables that will create in environment suitable for running shotmap
+export SHOTMAP_LOCAL=/local/cluster/shotmap/
+export PYTHONPATH=${PYTHONPATH}:${SHOTMAP_LOCAL}/pkg//MicrobeCensus/
+export PATH=$PATH:${SHOTMAP_LOCAL}/pkg//MicrobeCensus/scripts/
+export PATH=$PATH:${SHOTMAP_LOCAL}/bin/
+export PERL5LIB=${PERL5LIB}:${SHOTMAP_LOCAL}/lib:${SHOTMAP_LOCAL}/ext/lib
+export sm_database=/nfs1/Teaching/CGRB/525_f15/data/shotmap_ffdb/KEGG_021515_nr
